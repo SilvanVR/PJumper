@@ -1,7 +1,8 @@
 # PJumper
-2D Jump'n'run game using the unity engine. Playable in the browser with the unity plugin.
-Sadly only a couple browses support that (Chrome + Edge does not work).
-I recommend Firefox or IE (yes internet explorer ._.).
-You have to install the plugin first to play this game.
+2D Jump'n'run game using the unity engine. Programmed in my 3. Semester (after a year of programming experience)
+Playable in the browser with the unity plugin
+Sadly only a couple browsers support that (Chrome + Edge does not work)
+I recommend Firefox or IE (yes internet explorer ._.)
+You have to install the plugin first to play this game if you don't have it
 
 http://sta2.informatik.hs-fulda.de/~vs47/PJumper/PJumper.html
