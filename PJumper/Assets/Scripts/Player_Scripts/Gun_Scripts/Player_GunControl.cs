@@ -20,7 +20,7 @@ public class Player_GunControl : MonoBehaviour {
 	private bool shootPossible = true;
 
 	void Awake (){
-		spawn = transform.FindChild ("FireSpawn"); //The Spawn-Point for the Bullets
+		spawn = transform.Find ("FireSpawn"); //The Spawn-Point for the Bullets
 	}
 
 	// Update is called once per frame

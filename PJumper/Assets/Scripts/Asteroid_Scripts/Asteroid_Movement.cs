@@ -65,7 +65,7 @@ public class Asteroid_Movement : MonoBehaviour {
 	private IEnumerator destroyAsteroid (){
 		Instantiate (star, transform.position, Quaternion.identity);
 		GetComponent<CircleCollider2D> ().enabled = false; //Disable the Hit-Collider from the Asteroid
-		transform.FindChild ("Gravity_Zone").GetComponent<CircleCollider2D> ().enabled = false; //Disable the Trigger-Collider from the Gravity-Zone
+		transform.Find ("Gravity_Zone").GetComponent<CircleCollider2D> ().enabled = false; //Disable the Trigger-Collider from the Gravity-Zone
 		yield return new WaitForSeconds (3);
 		respawn ();
 	}
@@ -109,7 +109,7 @@ public class Asteroid_Movement : MonoBehaviour {
 		transform.position = spawnPoint;					//Reset Position
 		direction = oldDirection;							//Reset the Direction (could be modified if Asteroid collided with, possibly, a Planet)
 		GetComponent<CircleCollider2D> ().enabled = true;	//Enable the Hit-Collider from the Asteroid
-		transform.FindChild ("Gravity_Zone").GetComponent<CircleCollider2D> ().enabled = true;	//Enable the Trigger-Collider from the Gravity-Zone
+		transform.Find ("Gravity_Zone").GetComponent<CircleCollider2D> ().enabled = true;	//Enable the Trigger-Collider from the Gravity-Zone
 	}
 
 	/*Scale the Player (called from BlackHoles)*/

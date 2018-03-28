@@ -107,7 +107,7 @@ public class Player_Movement : MonoBehaviour {
 			    && (Time.time - jump_delay > 0.5f)) {
 				doubleJump = false;							//Disable Double Jump
 				dir += getUpVector () * jumpPower;			//Add the Vector to current dir-Vector
-				Instantiate (smokeEffect,transform.FindChild ("JumpDustSpawn").transform.position,Quaternion.identity);
+				Instantiate (smokeEffect,transform.Find ("JumpDustSpawn").transform.position,Quaternion.identity);
 			}
 		}
 
@@ -152,7 +152,7 @@ public class Player_Movement : MonoBehaviour {
 		transform.SetParent (playerParent);			//SET PLAYERPARENT AS THE NEW PARENT!!
 		anim.SetTrigger("Jump");
 		anim.SetBool ("Grounded",false);
-		Instantiate (smokeEffect,transform.FindChild ("JumpDustSpawn").transform.position,Quaternion.identity);	//Some Dust-Effect
+		Instantiate (smokeEffect,transform.Find ("JumpDustSpawn").transform.position,Quaternion.identity);	//Some Dust-Effect
 	}
 
 	/* Called from the CircleCollider from the SpaceObject if it Collides with the Player
